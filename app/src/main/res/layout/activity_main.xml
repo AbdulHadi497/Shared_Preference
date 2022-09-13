@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/i1">
+
+
+    <TextView
+        android:id="@+id/Txt_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LOG_IN : "
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/Edit_txt_1"
+        app:layout_constraintTop_toTopOf="@id/Edit_txt_1"
+        app:layout_constraintBottom_toBottomOf="@id/Edit_txt_1"
+        android:layout_marginStart="30dp"
+        />
+
+    <EditText
+        android:id="@+id/Edit_txt_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Name"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:inputType="text"
+        />
+
+    <TextView
+        android:id="@+id/Txt_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="PASSWORD : "
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/Edit_txt_2"
+        app:layout_constraintTop_toTopOf="@+id/Edit_txt_2"
+        app:layout_constraintBottom_toBottomOf="@+id/Edit_txt_2"
+        android:layout_marginStart="30dp"
+        />
+    <EditText
+        android:id="@+id/Edit_txt_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@+id/Edit_txt_1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="250dp"
+        android:inputType="numberPassword"
+        />
+
+    <ImageView
+        android:id="@+id/Img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/img"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/Edit_txt_1"
+        app:layout_constraintEnd_toEndOf="@+id/Edit_txt_1"
+        app:layout_constraintBottom_toTopOf="@+id/Edit_txt_1"
+        />
+    <Button
+        android:id="@+id/Save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save Data"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/teal_700"
+        app:layout_constraintTop_toBottomOf="@+id/Txt_2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/Clear"
+        android:layout_marginStart="10dp"/>
+    <Button
+        android:id="@+id/Clear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Clear Data"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/teal_700"
+        app:layout_constraintStart_toEndOf="@id/Save"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/Save"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="0.005dp"
+        />
+    <Button
+        android:id="@+id/Show"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show Data"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/teal_700"
+        app:layout_constraintStart_toStartOf="@id/Save"
+        app:layout_constraintTop_toBottomOf="@id/Save"
+        app:layout_constraintEnd_toEndOf="@+id/Save"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="20dp"
+        />
+    <Button
+        android:id="@+id/Default"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show Default"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/teal_700"
+        app:layout_constraintStart_toStartOf="@id/Clear"
+        app:layout_constraintEnd_toEndOf="@id/Clear"
+        app:layout_constraintTop_toBottomOf="@id/Clear"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="20dp"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
